@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net; 
 
 namespace PruebaGit
 {
@@ -15,6 +16,13 @@ namespace PruebaGit
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            String var_host;
+            var_host = Dns.GetHostName();
+            this.Text = var_host; 
         }
     }
 }
