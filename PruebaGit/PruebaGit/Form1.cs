@@ -22,7 +22,7 @@ namespace PruebaGit
         {
             String var_host;
             var_host = Dns.GetHostName();
-            this.Text = var_host; 
+            this.Text = var_host;
         }
     }
 }
